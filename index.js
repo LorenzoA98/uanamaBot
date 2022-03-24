@@ -21,11 +21,11 @@ client.once('ready', () => {
 
 client.on('message', async (message) => {
 
-    if( message.content == "ops" ){
+    /*if( message.content == "ops" ){
         if( !message.member.voice.channel ){
             return message.channel.send('Entra in un canale vocale e riscrivi il comando ops.')
         }else{
-            
+            message.member.se
             message.member.id.voice.setChannel(874259489606492228);
             message.member.id.voice.setChannel(874259489606492229);
             message.member.id.voice.setChannel(898248263797440564);
@@ -35,6 +35,11 @@ client.on('message', async (message) => {
             
             return message.channel.send('ops.');
         }
+    }*/
+
+    if( message.content == "!kevin" ){
+        return message.channel.send('Kevin ha il pisello piccolo.')
+        
     }
 
     if(message.author.bot) return;
