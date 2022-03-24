@@ -37,10 +37,10 @@ client.on('message', async (message) => {
         }
     }*/
 
-    if( message.content == "!kevin" ){
+    /*if( message.content == "!kevin" ){
         return message.channel.send('Kevin ha il pisello piccolo.')
         
-    }
+    }*/
 
     if(message.author.bot) return;
     if(!message.content.startsWith(prefix)) return;
