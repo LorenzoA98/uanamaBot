@@ -1,6 +1,5 @@
 const { Client, Intents } = require('discord.js');
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
-const { token } = require('./info.json');
 const prefix = '!';
 
 const Distube = require('distube');
