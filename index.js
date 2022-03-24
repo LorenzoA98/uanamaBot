@@ -1,5 +1,6 @@
 const { Client, Intents } = require('discord.js');
-const client = new Client({ intents: ["GUILDS","GUILD_MEMBERS","GUILD_MESSAGES"] });
+const allIntents = new Intents(32767);
+const client = new Client({ allIntents });
 const prefix = '!';
 
 const Distube = require('distube');
