@@ -25,12 +25,13 @@ client.on('message', async (message) => {
         if( !message.member.voice.channel ){
             return message.channel.send('Entra in un canale vocale e riscrivi il comando ops.')
         }else{
-            message.guild.member(user.id).voice.setChannel(874259489606492228)
-            message.guild.member(user.id).voice.setChannel(874259489606492229)
-            message.guild.member(user.id).voice.setChannel(898248263797440564)
-            message.guild.member(user.id).voice.setChannel(880582204877590528)
-            message.guild.member(user.id).voice.setChannel(902847813967306782)
-            message.guild.member(user.id).voice.setChannel(938382556477411349)
+            message.member.id.voice.setChannel(874259489606492228)
+            message.member.id.voice.setChannel(874259489606492229)
+            message.member.id.voice.setChannel(898248263797440564)
+            message.member.id.voice.setChannel(880582204877590528)
+            message.member.id.voice.setChannel(902847813967306782)
+            message.member.id.voice.setChannel(938382556477411349)
+            
             return message.channel.send('ops.')
         }
     }
