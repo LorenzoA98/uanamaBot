@@ -19,7 +19,13 @@ client.once('ready', () => {
 */
 
 client.on("messageCreate", (message) =>{
-    console.log(message)
+    if( message.content == "ops" ){
+        if( !message.member.voice.channel ){
+            message.channel.send('Entra in un canale vocale e riscrivi il comando ops.')
+        }else{
+            message.channel.send('ops.')
+        }
+    }
 })
 
 client.on('message', async (message) => {
