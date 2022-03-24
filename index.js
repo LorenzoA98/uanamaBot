@@ -18,17 +18,16 @@ client.once('ready', () => {
 });
 */
 
-client.on("messageCreate", (message) =>{
+client.on('message', async (message) => {
+
     if( message.content == "ops" ){
         if( !message.member.voice.channel ){
-            message.channel.send('Entra in un canale vocale e riscrivi il comando ops.')
+            return message.channel.send('Entra in un canale vocale e riscrivi il comando ops.')
         }else{
-            message.channel.send('ops.')
+            return message.channel.send('ops.')
         }
     }
-})
 
-client.on('message', async (message) => {
     if(message.author.bot) return;
     if(!message.content.startsWith(prefix)) return;
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
