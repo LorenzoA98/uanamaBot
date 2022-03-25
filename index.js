@@ -27,7 +27,7 @@ client.once('ready', () => {
 });
 */
 
-client.on('messageCreate', async (message) => {
+client.on('message', async (message) => {
 
     /*if( message.content == "ops" ){
         if( !message.member.voice.channel ){
