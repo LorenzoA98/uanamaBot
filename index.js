@@ -139,7 +139,7 @@ client.on('messageCreate', async (message) => {
 
         let queue = distube.getQueue(message)
 
-        let totPage = Math.ceil(queue.song.length / 10)
+        let totPage = Math.ceil(queue.songs.length / 10)
         let page = 1
 
         let songsList = ""
