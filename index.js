@@ -65,7 +65,7 @@ client.on('message', async (message) => {
             return message.channel.send("Someone else is already using the Bot.")
         }
 
-        let args = mesage.content.split(/\s+/)
+        let args = message.content.split(/\s+/)
         let query = args.slice(1).join(" ")
 
         if(!query){
