@@ -287,7 +287,7 @@ client.on('message', async (message) => {
 })
 
 distube.on("addSong", (queue, song) => {
-    var embed = new Discord.MessageEmbed()
+    let embed = new Discord.MessageEmbed()
         .setTitle("Song added")
         .addField("Song", song.name)
 
@@ -295,7 +295,7 @@ distube.on("addSong", (queue, song) => {
 })
 
 distube.on("playSong", (queue, song) => {
-    var embed = new Discord.MessageEmbed()
+    let embed = new Discord.MessageEmbed()
         .setTitle("Playng song...")
         .addField("Song", song.name)
         .addField("Requested by", song.user.toString())
