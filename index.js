@@ -30,7 +30,7 @@ client.once('ready', () => {
 
 client.on('messageCreate', async (message) => {
 
-    if( message.content == "ops" ){
+    /*if( message.content == "ops" ){
         if( !message.member.voice.channel ){
             return message.channel.send('Entra in un canale vocale e riscrivi il comando ops.')
         }else{
@@ -44,7 +44,7 @@ client.on('messageCreate', async (message) => {
             
             return message.channel.send('ops.');
         }
-    }
+    }*/
 
     /*if( message.content == "!kevin" ){
         return message.channel.send('Kevin ha il pisello piccolo.')
