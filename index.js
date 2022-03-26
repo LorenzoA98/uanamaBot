@@ -70,7 +70,7 @@ client.on('messageCreate', async (message) => {
         let query = args.slice(1).join(" ")
 
         if(!query){
-            message.content = "play https://www.youtube.com/watch?v=yH5p2RBQ7Ns&ab_channel=TheKiffness"
+            query = "play https://www.youtube.com/watch?v=yH5p2RBQ7Ns&ab_channel=TheKiffness"
             //return message.channel.send("You must state something to play.")
         }
 
