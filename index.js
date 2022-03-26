@@ -36,11 +36,11 @@ client.on('messageCreate', async (message) => {
         }else{
             
             message.member.voice.setChannel(874259489606492228);
-            message.member.voice.setChannel(874259489606492229);
-            message.member.voice.setChannel(898248263797440564);
-            message.member.voice.setChannel(880582204877590528);
-            message.member.voice.setChannel(902847813967306782);
-            message.member.voice.setChannel(938382556477411349);
+            //message.member.voice.setChannel(874259489606492229);
+            //message.member.voice.setChannel(898248263797440564);
+            //message.member.voice.setChannel(880582204877590528);
+            //message.member.voice.setChannel(902847813967306782);
+            //message.member.voice.setChannel(938382556477411349);
             
             return message.channel.send('ops.');
         }
