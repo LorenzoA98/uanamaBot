@@ -76,7 +76,7 @@ client.on('messageCreate', async (message) => {
         }
 
         if( !voiceChannelBot ){
-            query1 = "https://www.youtube.com/watch?v=zP-3e_rKJ4s&ab_channel=%D0%90%D0%BD%D0%B4%D1%80%D0%B5%D0%B9%D0%90%D0%BD%D0%B4%D1%80%D0%B5%D0%B5%D0%B2"
+            query1 = "https://www.youtube.com/watch?v=-1qju6V1jLM&ab_channel=ZMOONCHILDlive"
             distube.play(voiceChannelBot || voiceChannel, query1, {
                 member: message.member,
                 textChannel: message.channel,
