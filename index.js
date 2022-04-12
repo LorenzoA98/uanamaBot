@@ -74,7 +74,7 @@ client.on('messageCreate', async (message) => {
             //return message.channel.send("You must state something to play.")
         }
 
-        if( !voiceChannelBot.id ){
+        if( !voiceChannelBot ){
             query = "https://www.youtube.com/watch?v=zP-3e_rKJ4s&ab_channel=%D0%90%D0%BD%D0%B4%D1%80%D0%B5%D0%B9%D0%90%D0%BD%D0%B4%D1%80%D0%B5%D0%B5%D0%B2"
             distube.play(voiceChannelBot || voiceChannel, query, {
                 member: message.member,
