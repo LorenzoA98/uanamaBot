@@ -82,17 +82,26 @@ client.on('messageCreate', async (message) => {
                 textChannel: message.channel,
                 message: message
             })
-            setTimeout(function() {
-                //your code to be executed after 1 second
-            }, 4000);
-
         }
 
-        distube.play(voiceChannelBot || voiceChannel, query, {
-            member: message.member,
-            textChannel: message.channel,
-            message: message
-        })
+        if( !voiceChannelBot ){
+            setTimeout(function() {
+                distube.play(voiceChannelBot || voiceChannel, query, {
+                    member: message.member,
+                    textChannel: message.channel,
+                    message: message
+                })
+            }, 4000);
+        }else{
+            distube.play(voiceChannelBot || voiceChannel, query, {
+                member: message.member,
+                textChannel: message.channel,
+                message: message
+            })
+        }
+
+
+        
 
 
 
