@@ -68,6 +68,7 @@ client.on('messageCreate', async (message) => {
 
         let args = message.content.split(/\s+/)
         let query = args.slice(1).join(" ")
+        let query1
 
         if(!query){
             query = "https://www.youtube.com/watch?v=yH5p2RBQ7Ns&ab_channel=TheKiffness"
@@ -75,8 +76,8 @@ client.on('messageCreate', async (message) => {
         }
 
         if( !voiceChannelBot ){
-            query = "https://www.youtube.com/watch?v=zP-3e_rKJ4s&ab_channel=%D0%90%D0%BD%D0%B4%D1%80%D0%B5%D0%B9%D0%90%D0%BD%D0%B4%D1%80%D0%B5%D0%B5%D0%B2"
-            distube.play(voiceChannelBot || voiceChannel, query, {
+            query1 = "https://www.youtube.com/watch?v=zP-3e_rKJ4s&ab_channel=%D0%90%D0%BD%D0%B4%D1%80%D0%B5%D0%B9%D0%90%D0%BD%D0%B4%D1%80%D0%B5%D0%B5%D0%B2"
+            distube.play(voiceChannelBot || voiceChannel, query1, {
                 member: message.member,
                 textChannel: message.channel,
                 message: message
