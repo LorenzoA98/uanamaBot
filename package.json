@@ -14,6 +14,7 @@
     "@distube/soundcloud": "^1.1.0",
     "@distube/spotify": "^1.2.1",
     "@distube/yt-dlp": "^1.0.2",
+    "@distube/ytdl-core": "^4.11.2",
     "discord.js": "^13.6.0",
     "distube": "^3.3.3",
     "ffmpeg-static": "^4.4.1",
