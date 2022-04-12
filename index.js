@@ -82,6 +82,9 @@ client.on('messageCreate', async (message) => {
                 textChannel: message.channel,
                 message: message
             })
+            setTimeout(function() {
+                //your code to be executed after 1 second
+            }, 4000);
 
         }
 
